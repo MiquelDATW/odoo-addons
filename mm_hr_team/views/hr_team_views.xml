@@ -28,7 +28,7 @@
                         <group>
                             <group name="info" string="Team Info">
                                 <field name="manager_id"
-                                       options="{'no_create_edit': True}"
+                                       options="{'no_create': True}"
                                        domain="[('id','in',team_member_ids)]"/>
                                 <field name="date_from"/>
                                 <field name="date_to"/>
