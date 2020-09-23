@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "HR Nutrition",
-    "summary": "Manage your employees' nutrition",
+    "summary": "Manage your employees' dietary allergens and exclusions",
     "version": "11.0.1.0.5",
     "category": "Health",
     "website": "https://github.com/MiquelDATW/pinta-la-pinya",

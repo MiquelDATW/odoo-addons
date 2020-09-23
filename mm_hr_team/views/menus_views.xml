@@ -37,6 +37,12 @@
             sequence="10"/>
 
         <menuitem
+            id="hr.menu_hr_department_tree"
+            action="hr.open_module_tree_department"
+            parent="hr.menu_open_view_employee_list_my"
+            sequence="11"/>
+
+        <menuitem
             id="menu_hr_team"
             action="action_hr_team_teams"
             parent="hr.menu_open_view_employee_list_my"

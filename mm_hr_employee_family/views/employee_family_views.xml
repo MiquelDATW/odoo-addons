@@ -43,12 +43,12 @@
                                        attrs="{'invisible': [('is_relation', '=', True)], 'required': [('is_relation', '=', False)]}"/>
                                 <field name="family_id" options="{'no_create': True}"
                                        attrs="{'invisible': [('is_relation', '=', False)], 'required': [('is_relation', '=', True)]}"/>
+                                <field name="family_marital" attrs="{'readonly': [('is_relation', '=', True)]}"/>
                             </group>
                             <group>
                                 <field name="inverse_family_id" invisible="1"/>
                                 <field name="family_country_id" attrs="{'readonly': [('is_relation', '=', True)]}"/>
                                 <field name="family_gender" attrs="{'readonly': [('is_relation', '=', True)]}"/>
-                                <field name="family_marital" attrs="{'readonly': [('is_relation', '=', True)]}"/>
                                 <field name="family_birthday" attrs="{'readonly': [('is_relation', '=', True)]}"/>
                                 <field name="family_job" attrs="{'readonly': [('is_relation', '=', True)]}"/>
                                 <field name="family_phone_number" attrs="{'readonly': [('is_relation', '=', True)]}"/>
@@ -72,9 +72,8 @@
                     <field name="relation_id"/>
                     <field name="family_name"/>
                     <field name="family_id" invisible="1"/>
-                    <field name="family_country_id"/>
-                    <field name="family_gender"/>
                     <field name="family_marital"/>
+                    <field name="family_gender"/>
                     <field name="family_birthday"/>
                     <field name="family_job"/>
                     <field name="family_phone_number"/>
@@ -91,8 +90,8 @@
                     <field name="relation_id"/>
                     <field name="family_name"/>
                     <field name="family_country_id"/>
-                    <field name="family_gender"/>
                     <field name="family_marital"/>
+                    <field name="family_gender"/>
                     <field name="family_job"/>
                     <separator/>
                     <group expand="0" string="Group By">

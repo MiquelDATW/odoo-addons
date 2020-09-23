@@ -69,25 +69,26 @@
                 id="menu_hr_nutrition"
                 parent="hr.menu_hr_root"
                 name="Nutrition"
-                sequence="10"
+                sequence="99"
                 groups="hr.group_hr_user"
         />
 
-        <menuitem id="menu_hr_diet"
-                  parent="menu_hr_nutrition"
-                  sequence="10"
-                  action="action_hr_diet"/>
         <menuitem id="menu_hr_allergen"
                   parent="menu_hr_nutrition"
-                  sequence="20"
+                  sequence="11"
                   action="action_hr_allergen"/>
         <menuitem id="menu_hr_exclusion"
                   parent="menu_hr_nutrition"
-                  sequence="25"
+                  sequence="12"
                   action="action_hr_exclusion"/>
-        <menuitem id="menu_hr_category"
+        <menuitem id="menu_hr_diet"
                   parent="menu_hr_nutrition"
-                  sequence="30"
+                  sequence="13"
+                  action="action_hr_diet"/>
+
+        <menuitem id="menu_hr_category"
+                  parent="hr.menu_human_resources_configuration"
+                  sequence="20"
                   action="action_hr_category"/>
     </data>
 </odoo>

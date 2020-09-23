@@ -23,20 +23,20 @@ class HrEmployee(models.Model):
     _inherit = 'hr.employee'
 
     team_ids = fields.Many2many('hr.team', string='Teams')
-    count_teams = fields.Integer(string="Equips total", compute="_compute_count_teams", store=True)
+    count_teams = fields.Integer(string="Teams count", compute="_compute_count_teams", store=True)
 
     @api.multi
     @api.depends('team_ids')
     def _compute_count_teams(self):
-        muixeranguers = self.filtered(lambda x: bool(x.team_ids))
-        for muixeranguer in muixeranguers:
-            teams = muixeranguer.team_ids
-            muixeranguer.count_teams = len(teams.ids)
+        employees = self.filtered(lambda x: bool(x.team_ids))
+        for employee in employees:
+            teams = employee.team_ids
+            employee.count_teams = len(teams.ids)
 
-    def pinya_teams(self):
+    def employee_teams(self):
         view_tree_id = self.env.ref('mm_hr_team.view_hr_team_tree').id
         view_form_id = self.env.ref('mm_hr_team.view_hr_team_form').id
-        name = "Equips de {}".format(self.name)
+        name = "Teams of {}".format(self.name)
         model = "hr.team"
         domain = [('id', 'in', self.team_ids.ids)]
         action = _get_action(view_tree_id, view_form_id, name, model, domain)

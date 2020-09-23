@@ -4,7 +4,7 @@
 HR Employee Nutrition
 =====================
 
-Manage your employees' nutrition
+Manage your employees' dietary allergens and exclusions
 
 Installation
 ============

@@ -18,5 +18,6 @@
         "security/ir.model.access.csv",
         "views/anthropometry_view.xml",
         "views/hr_employee_view.xml",
+        "views/menus.xml",
     ],
 }

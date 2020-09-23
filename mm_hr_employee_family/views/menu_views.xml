@@ -32,15 +32,21 @@
         </record>
 
         <menuitem
+            id="menu_hr_family_root"
+            parent="hr.menu_hr_root"
+            name="Family"
+            sequence="99"
+            groups="hr.group_hr_user"/>
+        <menuitem
             id="menu_view_hr_family"
             action="action_hr_family"
-            parent="hr.menu_human_resources_configuration"
-            sequence="11"/>
+            parent="menu_hr_family_root"
+            sequence="10"/>
 
         <menuitem
             id="menu_view_hr_relation"
             action="action_hr_relation"
             parent="hr.menu_human_resources_configuration"
-            sequence="12"/>
+            sequence="15"/>
     </data>
 </odoo>
